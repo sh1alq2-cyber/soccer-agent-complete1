@@ -1,0 +1,88 @@
+.system-status { display: flex; flex-direction: column; gap: 20px; }
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.checks-list { display: flex; flex-direction: column; gap: 8px; }
+
+.check-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.check-icon { font-size: 20px; flex-shrink: 0; }
+.check-info { flex: 1; }
+.check-name { font-size: 14px; font-weight: 600; }
+.check-status-text { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+.install-section { margin-bottom: 20px; }
+.install-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+.install-icon { font-size: 24px; }
+.install-name { font-size: 15px; font-weight: 700; margin-bottom: 2px; }
+.install-desc { font-size: 12px; color: var(--text-muted); }
+
+.inline-code {
+  background: var(--bg-elevated);
+  color: var(--accent-green);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.env-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.env-item {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+}
+
+.env-key {
+  font-family: monospace;
+  font-size: 11px;
+  color: var(--accent-green);
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+.env-label { font-size: 13px; font-weight: 700; margin-bottom: 2px; }
+.env-desc { font-size: 12px; color: var(--text-muted); }
+
+.quickstart-steps { display: flex; flex-direction: column; gap: 16px; }
+
+.quickstart-item { display: flex; gap: 16px; align-items: flex-start; }
+
+.qs-num {
+  width: 32px;
+  height: 32px;
+  background: var(--accent-green);
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.qs-body { flex: 1; }
+.qs-title { font-size: 14px; font-weight: 700; margin-bottom: 8px; }
+
+@media (max-width: 768px) {
+  .env-grid { grid-template-columns: 1fr; }
+}
